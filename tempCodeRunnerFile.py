@@ -1,0 +1,8 @@
+img=Image.open('card.jpg')
+img1=Image.open('iata.png')
+img1=img1.resize((110,50),Image.ANTIALIAS)
+img=img.resize((110,50),Image.ANTIALIAS)
+render=ImageTk.PhotoImage(img)
+render1=ImageTk.PhotoImage(img1)
+Label(app,image=render1).place(x=100,y=210)
+Label(app,image=render).place(x=220,y=210)
